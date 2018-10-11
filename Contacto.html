@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Mis Perris</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+
+  <nav class="green darken-3" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a><img class="responsive-img"
+        src="img/logo.png">
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quienessosmos.html">Quiénes Somos</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="Formulario.html">Adopta</a></li>
+        <li><a href="Contacto.html">Contáctenos</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li>
+          <div class="user-view">
+            <div class="background">
+            </div>
+
+          </div>
+        </li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quienessosmos.html">Quiénes Somos</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contáctenos</a></li>
+        <li><a href="formulario.html">Adopta</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <section class="container">
+    <div class="row">
+      <h3 class="center-align green-text">Contacto</h3>
+      <div class="col s12 m3">
+        <h5 class="black-text"></h5>
+      </div>
+
+      <article class="col s12 m6">
+        <form method="POST" action="#">
+          <div class="input-field">
+            <i class="material-icons prefix">perm_identity</i>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}"
+              required />
+          </div>
+
+
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Ej: Contacto@misperris.cl" required>
+          </div>
+
+
+
+          <div class="input-field">
+            <i class="material-icons prefix">phone</i>
+            <input type="tel" class="validate" pattern="[0-9]{9}" required>
+            <label for="icon_telephone">Telefono</label>
+          </div>
+
+
+
+          <div class="input-field">
+            <i class="material-icons prefix">mode_edit</i>
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="" rows="10" class="materialize-textarea" length="140" required></textarea>
+          </div>
+
+          <p class="center-align">
+            <button class="waves-effect waves-light btn green darken-3" type="submit"><i class="material-icons right">send</i>enviar</button>
+          </p>
+
+        </form>
+
+      </article>
+    </div>
+  </section>
+
+  <footer class="page-footer green darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Fundacion Mis Perris</h5>
+          <p class="grey-text text-lighten-4">La Fundación Mis Perris, dedicada al rescate, rehabilitación y
+            reubicación de perros en peligro o abandonados.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Desarrollado por <a class="white-text text-lighten-3" href="contacto.html">Marcelo Escobar / Samuel Santander</a>
+      </div>
+    </div>
+  </footer>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>$(document).ready(function () {
+      $('.slider').slider();
+    });</script>
+  <script>
+    $(document).ready(function () {
+      $('.materialbox').materialbox();
+    });</script>
+  <script>  $(document).ready(function () {
+      $('.sidenav').sidenav();
+    });</script>
+  <script>  $(document).ready(function () {
+      $('.datepicker').datepicker();
+    });</script>
+  <script>  $(document).ready(function () {
+      $('select').formSelect();
+    });</script>
